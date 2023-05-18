@@ -4,6 +4,6 @@ const router = express.Router();
 
 router.get("/", ProjectController.getProjects);
 router.get("/:id", ProjectController.getProjectById);
-router.get("/", ProjectController.createProject);
+router.post("/", ProjectController.createProject);
 
 module.exports = router;
